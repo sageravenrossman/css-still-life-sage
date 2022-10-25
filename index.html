@@ -15,8 +15,56 @@
 /*     margin: auto; */
     
   }
+  
+  .bustelo{
+    position: relative;
+    width: 140px;
+    height: 180px;
+    border-radius: 3%;
+    transform: translate(60px, 140px);
+    background-image: radial-gradient(
+      circle at 30px 30px,
+      #ffff6f,
+      #fff464,
+      #fff464,
+      #ffe426,
+      #ffe426,
+      #ffe426);
+  }
+  
+  .red {
+    background-color: red;
+    border-radius: 3%;
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+/*     transform: translate(0%, 90px); */
+/*     position: absolute; */
+/*     bottom: 0px; */
+/*     left: 0px; */
+    
+  }
+  
+  .cup{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(9,9,131,1) 50%);
+    border: 1px solid black;
+    background-size: 100% 40%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 400px;
+    top: 140px;
+  }
 
 </style>
 
-<div class="frame"></div>
+<div class="frame">
+  <div class="bustelo">
+    <div class="brand">CAFE BUSTELO</div>
+    <div class="red"></div>
+  </div>
+  <div class="cup"></div>
+</div>
 
