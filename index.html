@@ -40,12 +40,8 @@
     position: absolute;
     bottom: 0px;
     z-index: 0;
-/*     transform: translate(0%, 90px); */
-/*     position: absolute; */
-/*     bottom: 0px; */
-/*     left: 0px; */
-    
   }
+  
   
   .cup{
     background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(9,9,131,1) 50%);
@@ -99,9 +95,24 @@
     position: relative;
     width: 140px;
     height: 180px;
-    border-radius: 3%;
+    border: 1px solid black;
+    border-radius: 5%;
     z-index: 1;
-    transform: translate(150px, -50px);
+    transform: translate(230px, -200px);
+    background-image: linear-gradient(to right, #ffffff 0%, #545454 14%, #737373 29%, #ffffff 43%, #5e5e5e 71%, #868a85 80%, #595959 96%, #ffffff 100%);
+    clip-path: polygon(15% 41%, 85% 41%, 100% 100%, 0% 100%);
+  }
+  
+  .cantop{
+    position: relative;
+    width: 130px;
+    height: 160px;
+    border-radius: 3%;
+    z-index: 2;
+    transform: translate(236px, -460px);
+    background-image: linear-gradient(to right, #f4711a 25%, #f47c0b 25%, #f47106 50%, #d25445 50%);
+    clip-path: polygon(0 16%, 100% 16%, 91% 84%, 91% 100%, 50% 100%, 10% 100%, 10% 83%);
+  
   }
 
 </style>
@@ -113,8 +124,12 @@
     <div class="red"></div>
   </div>
   <div class="bustelo2"> 
+    <div class="cafe">CAFE</div>
+    <div class="bustel">BUSTEL</div>
+    <div class="red"></div>
   </div>
   <div class="cup"></div>
   <div class="canbottom"></div>
+  <div class="cantop"></div>
 </div>
 
