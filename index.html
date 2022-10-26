@@ -16,30 +16,32 @@
     
   }
   
+  .table{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: grey;
+    z-index: -2;
+    transform: translate(0px, 200px);
+  }
+  
   .bustelo{
     position: relative;
     width: 140px;
     height: 180px;
     border-radius: 3%;
     transform: translate(60px, 140px);
-    background-image: radial-gradient(
-      circle at 30px 30px,
-      #ffff6f,
-      #fff464,
-      #fff464,
-      #ffe426,
-      #ffe426,
-      #ffe426);
+    background-image: radial-gradient(circle at 8% 51%, #fff04d 27%, #e5c006 66%);
   }
   
   .red {
-    background-color: red;
+    background-image: linear-gradient(to right, #ff0000 0%, #8a0000 100%);
     border-radius: 3%;
     height: 35%;
     width: 100%;
     position: absolute;
     bottom: 0px;
-    z-index: 0;
+    z-index: 1;
   }
   
   
@@ -61,7 +63,7 @@
     font-size: 30;
     left: 10px;
     color: rgb(80, 13, 13);
-    font-family: luminari
+    font-family: luminari;
   }
   
   .bustel{
@@ -71,7 +73,7 @@
     z-index: 1;
     font-size: 30;
     color: rgb(80, 13, 13);
-    font-family: luminari
+    font-family: luminari;
   }
   
   .bustelo2{
@@ -81,14 +83,7 @@
     border-radius: 3%;
     z-index: -2;
     transform: translate(150px, -50px);
-    background-image: radial-gradient(
-      circle at 30px 30px,
-      #ffff6f,
-      #fff464,
-      #fff464,
-      #ffe426,
-      #ffe426,
-      #ffe426);
+    background-image: radial-gradient(circle at 8% 51%, #fff04d 27%, #e5c006 66%);
   }
   
   .canbottom{
@@ -106,18 +101,31 @@
   .cantop{
     position: relative;
     width: 127px;
-    height: 160px;
+    height: 150px;
     border-radius: 3%;
     z-index: 2;
-    transform: translate(237px, -460px);
+    transform: translate(237px, -450px);
     background: rgb(255, 96, 0);
     clip-path: polygon(0 16%, 100% 16%, 91% 84%, 91% 100%, 50% 100%, 10% 100%, 10% 83%);
   
+  }
+  
+  .canlid{
+    position: relative;
+    width: 127px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom: 1px solid grey;
+    z-index: 2;
+    transform: translate(237px, -600px);
+    background: rgb(255, 96, 0);
   }
 
 </style>
 
 <div class="frame">
+  <div class="table"></div>
   <div class="bustelo">
     <div class="cafe">CAFE</div>
     <div class="bustel">BUSTEL</div>
@@ -131,5 +139,6 @@
   <div class="cup"></div>
   <div class="canbottom"></div>
   <div class="cantop"></div>
+  <div class="canlid"></div>
 </div>
 
