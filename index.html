@@ -27,11 +27,12 @@
   }
   
   .nick{
-    background-image: <img src="nick.jpg">;
+    background-image: url(nick.jpg);;
     position: absolute;
     width: 500px;
     height: 200px;
     transform: translate(0px, 0px);
+    z-index: -2;
   }
   
   .bustelo{
@@ -128,7 +129,16 @@
   }
   
   .canpanel1{
-    background-image: linear-gradient(to right, #e3630d 25%, #fa8500 25%, #ff8800 50%, #f06c00 50%, #f57724 75%, #e65c00 75%);
+    background-image: linear-gradient(to right, #e3630d 24%, #fa8500 26%, #ff8800 49%, #f06c00 51%, #f57724 74%, #e65c00 76%);
+    position: absolute;
+    z-index: 1;
+    width: 127px;
+    height: 150px;
+    bottom: -424%;
+    left: 0px;
+/*     transform: rotateX(-10deg); */
+    clip-path: polygon(0 16%, 100% 16%, 91% 84%, 91% 82%, 50% 82%, 10% 82%, 10% 82%);
+    
   }
   
   .canlid{
@@ -181,7 +191,7 @@
 </style>
 
 <div class="frame">
-  <div class="nick"></div>
+<!--   <div class="nick"></div> -->
   <div class="table"></div>
   <div class="bustelo">
     <div class="cafe">CAFE</div>
@@ -204,6 +214,7 @@
   <div class="canlid">
     <div class="shadowcan"></div>
     <div class="shadowcan2"></div>
+    <div class="canpanel1"></div>
   </div>
 </div>
 
