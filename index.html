@@ -89,11 +89,10 @@
   
   .canbottom{
     position: relative;
-    width: 140px;
+    width: 142px;
     height: 180px;
-    border: 1px solid black;
     border-radius: 5%;
-    z-index: 1;
+    z-index: 0;
     transform: translate(230px, -200px);
     background-image: linear-gradient(to right, #ffffff 0%, #545454 14%, #737373 29%, #ffffff 43%, #5e5e5e 71%, #868a85 80%, #595959 96%, #ffffff 100%);
     clip-path: polygon(15% 41%, 85% 41%, 100% 100%, 0% 100%);
@@ -124,7 +123,38 @@
   }
   
   .shadowbustelo{
+    background-image: linear-gradient(#f0bcbc 23%, #eeedce 37%, #d1d1d1 100%);
+    border-radius: 3%;
+    height: 100%;
+    width: 100%;
     position: absolute;
+    bottom: -180px;
+    z-index: 1;
+    filter: blur(20px);
+  }
+  
+  .shadowcan{
+    background-image: linear-gradient(to right, #969696 22%, #ffffff 50%, #969696 78%);
+    border-radius: 3%;
+    height: 450%;
+    width: 110%;
+    position: absolute;
+    bottom: -340px;
+    left: -10px;
+    z-index: 1;
+    filter: blur(20px);
+  }
+  
+  .shadowcan2{
+    background-image: linear-gradient(rgb(255, 255, 255, 0) 39%, rgb(255, 204, 133, 0.4) 64%);
+    border-radius: 3%;
+    height: 600%;
+    width: 110%;
+    position: absolute;
+    bottom: -380px;
+    left: -10px;
+    z-index: 1;
+    filter: blur(20px);
   }
 
 </style>
@@ -135,15 +165,21 @@
     <div class="cafe">CAFE</div>
     <div class="bustel">BUSTEL</div>
     <div class="red"></div>
+    <div class="shadowbustelo"></div>
   </div>
   <div class="bustelo2"> 
     <div class="cafe">CAFE</div>
     <div class="bustel">BUSTEL</div>
     <div class="red"></div>
+    <div class="shadowbustelo"></div>
   </div>
   <div class="cup"></div>
-  <div class="canbottom"></div>
+  <div class="canbottom">
+  </div>
   <div class="cantop"></div>
-  <div class="canlid"></div>
+  <div class="canlid">
+    <div class="shadowcan"></div>
+    <div class="shadowcan2"></div>
+  </div>
 </div>
 
