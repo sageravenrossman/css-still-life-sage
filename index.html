@@ -152,6 +152,18 @@
     clip-path: polygon(0% 100%, 0 43%, 2% 30%, 7% 17%, 14% 6%, 28% 0, 47% 0, 47% 20%, 33% 20%, 25% 25%, 21% 34%, 20% 43%, 20% 100%);
   }
   
+  .shinehandle{
+    background: black;
+    z-index: 3;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    bottom: -370%;
+    left: -20px;
+    background-image: linear-gradient(to right, #000000 0%, #5e5e5e 7%, #000000 28%, #000000 36%, #ff8b1f 35%, #c75000 43%);
+    clip-path: polygon(0% 100%, 0 43%, 2% 30%, 7% 17%, 14% 6%, 28% 0, 47% 0, 47% 20%, 33% 20%, 25% 25%, 21% 34%, 20% 43%, 20% 100%);
+  }
+  
   .canlid{
     position: relative;
     width: 127px;
@@ -159,9 +171,9 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom: 1px solid grey;
+    background-image: linear-gradient(to top right, #fa9200 0%, #ff7300 25%, #ff7300 50%, #ffffff 87%, #ff7300 100%);
     z-index: 2;
     transform: translate(237px, -600px);
-    background: rgb(255, 96, 0);
   }
   
   .shadowbustelo{
@@ -227,6 +239,7 @@
     <div class="shadowcan2"></div>
     <div class="canpanel1"></div>
     <div class="canhandle"></div>
+    <div class="shinehandle"></div>
   </div>
 </div>
 
